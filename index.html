@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="conteudo">
+    <header class="conteudo_cabecalho">
+        <img src="/imagens/logo-alura.png" alt="logo-alura">
+    </header>
+    <main class="conteudo_principal">
+        <section class="conteudo_principal_esquerda">
+            <textarea class="conteudo_principal_esquerda_input" cols="35" rows="1" placeholder="Digite seu texto"></textarea>
+            <div class="conteudo_principal_esquerda_texto_alerta">
+                <img src="/imagens/alerta.png" alt="alerta">
+                <h6>Apenas letras minúsculas e sem acento.</h6>
+            </div>
+            <div class="botoes_esquerda">
+                <button class="botao_criptografar" onclick="btnEncriptar()">Criptografar</button>
+                <button class="botao_descriptografar" onclick="btnDesencriptar()">Descriptografar</button>
+            </div>
+        </section>
+        <section class="conteudo_principal_direita">
+            <textarea class="conteudo_principal_direita_input" id="textoInput" cols="20" rows="12"></textarea>
+            <img class="lupa" id="imagem" src="/imagens/boneco-com-lupa.png" alt="boneco com lupa">
+            <div class="conteudo_principal_direita_texto" id="texto">
+                <h1>Nenhuma mensagem <br> encontrada</h1>
+                <p>Digite um texto que você deseja <br> criptografar ou descriptografar.</p>
+            </div>
+            <button class="botao_direita" id="btnCopiar" onclick="copiarTexto()">Copiar</button>
+        </section>
+    </main>
+    <footer>
+        Desenvolvido por Carlos Ferreira | 2024
+        <a href="https://github.com/Carlos-AFM7">
+            <img src="/imagens/github.png" alt="logo-github">
+        </a>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
